@@ -1,0 +1,437 @@
+2017/12/15 16:19:06 [INFO] Packer version: 1.0.4
+2017/12/15 16:19:06 Packer Target OS/Arch: windows amd64
+2017/12/15 16:19:06 Built with Go Version: go1.8.3
+2017/12/15 16:19:06 Using internal plugin for virtualbox-ovf
+2017/12/15 16:19:06 Using internal plugin for azure-arm
+2017/12/15 16:19:06 Using internal plugin for docker
+2017/12/15 16:19:06 Using internal plugin for file
+2017/12/15 16:19:06 Using internal plugin for parallels-pvm
+2017/12/15 16:19:06 Using internal plugin for virtualbox-iso
+2017/12/15 16:19:06 Using internal plugin for cloudstack
+2017/12/15 16:19:06 Using internal plugin for hyperv-iso
+2017/12/15 16:19:06 Using internal plugin for oneandone
+2017/12/15 16:19:06 Using internal plugin for alicloud-ecs
+2017/12/15 16:19:06 Using internal plugin for amazon-chroot
+2017/12/15 16:19:06 Using internal plugin for amazon-ebs
+2017/12/15 16:19:06 Using internal plugin for amazon-ebssurrogate
+2017/12/15 16:19:06 Using internal plugin for amazon-ebsvolume
+2017/12/15 16:19:06 Using internal plugin for openstack
+2017/12/15 16:19:06 Using internal plugin for qemu
+2017/12/15 16:19:06 Using internal plugin for vmware-iso
+2017/12/15 16:19:06 Using internal plugin for digitalocean
+2017/12/15 16:19:06 Using internal plugin for null
+2017/12/15 16:19:06 Using internal plugin for parallels-iso
+2017/12/15 16:19:06 Using internal plugin for triton
+2017/12/15 16:19:06 Using internal plugin for amazon-instance
+2017/12/15 16:19:06 Using internal plugin for googlecompute
+2017/12/15 16:19:06 Using internal plugin for profitbricks
+2017/12/15 16:19:06 Using internal plugin for vmware-vmx
+2017/12/15 16:19:06 Using internal plugin for puppet-masterless
+2017/12/15 16:19:06 Using internal plugin for windows-shell
+2017/12/15 16:19:06 Using internal plugin for converge
+2017/12/15 16:19:06 Using internal plugin for powershell
+2017/12/15 16:19:06 Using internal plugin for puppet-server
+2017/12/15 16:19:06 Using internal plugin for shell
+2017/12/15 16:19:06 Using internal plugin for ansible
+2017/12/15 16:19:06 Using internal plugin for ansible-local
+2017/12/15 16:19:06 Using internal plugin for chef-client
+2017/12/15 16:19:06 Using internal plugin for chef-solo
+2017/12/15 16:19:06 Using internal plugin for file
+2017/12/15 16:19:06 Using internal plugin for salt-masterless
+2017/12/15 16:19:06 Using internal plugin for windows-restart
+2017/12/15 16:19:06 Using internal plugin for shell-local
+2017/12/15 16:19:06 Using internal plugin for alicloud-import
+2017/12/15 16:19:06 Using internal plugin for vagrant-cloud
+2017/12/15 16:19:06 Using internal plugin for atlas
+2017/12/15 16:19:06 Using internal plugin for docker-import
+2017/12/15 16:19:06 Using internal plugin for docker-tag
+2017/12/15 16:19:06 Using internal plugin for googlecompute-export
+2017/12/15 16:19:06 Using internal plugin for amazon-import
+2017/12/15 16:19:06 Using internal plugin for artifice
+2017/12/15 16:19:06 Using internal plugin for manifest
+2017/12/15 16:19:06 Using internal plugin for shell-local
+2017/12/15 16:19:06 Using internal plugin for vsphere
+2017/12/15 16:19:06 Using internal plugin for checksum
+2017/12/15 16:19:06 Using internal plugin for docker-save
+2017/12/15 16:19:06 Using internal plugin for vagrant
+2017/12/15 16:19:06 Using internal plugin for compress
+2017/12/15 16:19:06 Using internal plugin for docker-push
+2017/12/15 16:19:06 Attempting to open config file: C:\Users\gardar\AppData\Roaming\packer.config
+2017/12/15 16:19:06 [WARN] Config file doesn't exist: C:\Users\gardar\AppData\Roaming\packer.config
+2017/12/15 16:19:06 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[amazon-instance:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance vmware-vmx:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx azure-arm:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm virtualbox-iso:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso amazon-ebsvolume:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebsvolume qemu:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu triton:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-triton docker:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker parallels-pvm:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm openstack:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack vmware-iso:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso oneandone:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oneandone amazon-chroot:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot parallels-iso:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso googlecompute:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute virtualbox-ovf:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf file:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file cloudstack:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-cloudstack hyperv-iso:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-iso null:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null profitbricks:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-profitbricks alicloud-ecs:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-alicloud-ecs amazon-ebs:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs amazon-ebssurrogate:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebssurrogate digitalocean:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean] PostProcessors:map[docker-tag:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag vagrant-cloud:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud atlas:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-atlas amazon-import:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import manifest:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-manifest shell-local:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local docker-save:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save vagrant:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant alicloud-import:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-alicloud-import docker-import:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import docker-push:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push artifice:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice compress:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress checksum:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-checksum googlecompute-export:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-googlecompute-export vsphere:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere] Provisioners:map[converge:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-converge puppet-server:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server chef-client:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client file:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file salt-masterless:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless puppet-masterless:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless shell-local:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local ansible:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible ansible-local:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local chef-solo:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo windows-shell:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell powershell:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell shell:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell windows-restart:C:\Program Files\Packer\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart]}
+2017/12/15 16:19:06 Setting cache directory: G:\code\packer-baseboxes\packer_cache
+2017/12/15 16:19:06 Loading builder: hyperv-iso
+2017/12/15 16:19:06 Plugin could not be found. Checking same directory as executable.
+2017/12/15 16:19:06 Current exe path: C:\Program Files\Packer\packer.exe
+2017/12/15 16:19:06 Creating plugin client for path: C:\Program Files\Packer\packer.exe
+2017/12/15 16:19:06 Starting plugin: C:\Program Files\Packer\packer.exe []string{"C:\\Program Files\\Packer\\packer.exe", "plugin", "packer-builder-hyperv-iso"}
+2017/12/15 16:19:07 Waiting for RPC address for: C:\Program Files\Packer\packer.exe
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 [INFO] Packer version: 1.0.4
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Packer Target OS/Arch: windows amd64
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Built with Go Version: go1.8.3
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Attempting to open config file: C:\Users\gardar\AppData\Roaming\packer.config
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 [WARN] Config file doesn't exist: C:\Users\gardar\AppData\Roaming\packer.config
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Setting cache directory: G:\code\packer-baseboxes\packer_cache
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 args: []string{"packer-builder-hyperv-iso"}
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Plugin minimum port: 10000
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Plugin maximum port: 25000
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Plugin address: tcp 127.0.0.1:10000
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Waiting for connection...
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Serving a plugin connection...
+2017/12/15 16:19:07 Loading provisioner: powershell
+2017/12/15 16:19:07 Plugin could not be found. Checking same directory as executable.
+2017/12/15 16:19:07 Current exe path: C:\Program Files\Packer\packer.exe
+2017/12/15 16:19:07 Creating plugin client for path: C:\Program Files\Packer\packer.exe
+2017/12/15 16:19:07 Starting plugin: C:\Program Files\Packer\packer.exe []string{"C:\\Program Files\\Packer\\packer.exe", "plugin", "packer-provisioner-powershell"}
+2017/12/15 16:19:07 Waiting for RPC address for: C:\Program Files\Packer\packer.exe
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 [INFO] Packer version: 1.0.4
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Packer Target OS/Arch: windows amd64
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Built with Go Version: go1.8.3
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Attempting to open config file: C:\Users\gardar\AppData\Roaming\packer.config
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 [WARN] Config file doesn't exist: C:\Users\gardar\AppData\Roaming\packer.config
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Setting cache directory: G:\code\packer-baseboxes\packer_cache
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 args: []string{"packer-provisioner-powershell"}
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Plugin minimum port: 10000
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Plugin maximum port: 25000
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Plugin address: tcp 127.0.0.1:10000
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Waiting for connection...
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Serving a plugin connection...
+2017/12/15 16:19:07 Loading post-processor: vagrant
+2017/12/15 16:19:07 Plugin could not be found. Checking same directory as executable.
+2017/12/15 16:19:07 Current exe path: C:\Program Files\Packer\packer.exe
+2017/12/15 16:19:07 Creating plugin client for path: C:\Program Files\Packer\packer.exe
+2017/12/15 16:19:07 Starting plugin: C:\Program Files\Packer\packer.exe []string{"C:\\Program Files\\Packer\\packer.exe", "plugin", "packer-post-processor-vagrant"}
+2017/12/15 16:19:07 Waiting for RPC address for: C:\Program Files\Packer\packer.exe
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 [INFO] Packer version: 1.0.4
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Packer Target OS/Arch: windows amd64
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Built with Go Version: go1.8.3
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Attempting to open config file: C:\Users\gardar\AppData\Roaming\packer.config
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 [WARN] Config file doesn't exist: C:\Users\gardar\AppData\Roaming\packer.config
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Setting cache directory: G:\code\packer-baseboxes\packer_cache
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 args: []string{"packer-post-processor-vagrant"}
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Plugin minimum port: 10000
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Plugin maximum port: 25000
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Plugin address: tcp 127.0.0.1:10000
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Waiting for connection...
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 Serving a plugin connection...
+2017/12/15 16:19:07 ui: hyperv-iso output will be in this color.
+2017/12/15 16:19:07 ui: 
+2017/12/15 16:19:07 Build debug mode: false
+2017/12/15 16:19:07 Force build: false
+2017/12/15 16:19:07 On error: 
+2017/12/15 16:19:07 Preparing build: hyperv-iso
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 DiskSize: 41440
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 RamSize: 2048
+2017/12/15 16:19:07 packer.exe: 2017/12/15 16:19:07 VMName: windows10
+2017/12/15 16:19:10 packer.exe: 2017/12/15 16:19:10 Using switch eSw
+2017/12/15 16:19:10 packer.exe: 2017/12/15 16:19:10 SwitchName: eSw
+2017/12/15 16:19:10 ui: Warnings for build 'hyperv-iso':
+2017/12/15 16:19:10 ui: * Hyper-V might fail to create a VM if there is not enough free memory in the system.
+2017/12/15 16:19:10 ui: 
+2017/12/15 16:19:10 Waiting on builds to complete...
+2017/12/15 16:19:10 Starting build run: hyperv-iso
+2017/12/15 16:19:10 Running builder: hyperv-iso
+2017/12/15 16:19:10 [INFO] (telemetry) Starting builder hyperv-iso
+2017/12/15 16:19:10 packer.exe: 2017/12/15 16:19:10 Enter method: verifyPSVersion
+2017/12/15 16:19:10 packer.exe: 2017/12/15 16:19:10 $host.version.Major output: 5
+2017/12/15 16:19:10 packer.exe: 2017/12/15 16:19:10 Enter method: verifyPSHypervModule
+2017/12/15 16:19:10 packer.exe: 2017/12/15 16:19:10 Enter method: verifyHypervPermissions
+2017/12/15 16:19:11 ui: ==> hyperv-iso: Creating temporary directory...
+2017/12/15 16:19:11 ui: ==> hyperv-iso: Downloading or copying ISO
+2017/12/15 16:19:11 ui:     hyperv-iso: Downloading or copying: http://care.dlservice.microsoft.com/dl/download/B/8/B/B8B452EC-DD2D-4A8F-A88C-D2180C177624/15063.0.170317-1834.RS2_RELEASE_CLIENTENTERPRISEEVAL_OEMRET_X64FRE_EN-US.ISO
+2017/12/15 16:19:11 packer.exe: 2017/12/15 16:19:11 Acquiring lock to download: http://care.dlservice.microsoft.com/dl/download/B/8/B/B8B452EC-DD2D-4A8F-A88C-D2180C177624/15063.0.170317-1834.RS2_RELEASE_CLIENTENTERPRISEEVAL_OEMRET_X64FRE_EN-US.ISO
+2017/12/15 16:19:11 packer.exe: 2017/12/15 16:19:11 Parsed URL: &url.URL{Scheme:"http", Opaque:"", User:(*url.Userinfo)(nil), Host:"care.dlservice.microsoft.com", Path:"/dl/download/B/8/B/B8B452EC-DD2D-4A8F-A88C-D2180C177624/15063.0.170317-1834.RS2_RELEASE_CLIENTENTERPRISEEVAL_OEMRET_X64FRE_EN-US.ISO", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:""}
+2017/12/15 16:19:11 packer.exe: 2017/12/15 16:19:11 [DEBUG] Downloading: http://care.dlservice.microsoft.com/dl/download/B/8/B/B8B452EC-DD2D-4A8F-A88C-D2180C177624/15063.0.170317-1834.RS2_RELEASE_CLIENTENTERPRISEEVAL_OEMRET_X64FRE_EN-US.ISO
+2017/12/15 16:19:11 packer.exe: 2017/12/15 16:19:11 Starting download: http://care.dlservice.microsoft.com/dl/download/B/8/B/B8B452EC-DD2D-4A8F-A88C-D2180C177624/15063.0.170317-1834.RS2_RELEASE_CLIENTENTERPRISEEVAL_OEMRET_X64FRE_EN-US.ISO
+2017/12/15 16:19:16 ui:     hyperv-iso: Download progress: 0%
+2017/12/15 16:19:21 ui:     hyperv-iso: Download progress: 1%
+2017/12/15 16:19:26 ui:     hyperv-iso: Download progress: 1%
+2017/12/15 16:19:31 ui:     hyperv-iso: Download progress: 1%
+2017/12/15 16:19:36 ui:     hyperv-iso: Download progress: 1%
+2017/12/15 16:19:41 ui:     hyperv-iso: Download progress: 2%
+2017/12/15 16:19:46 ui:     hyperv-iso: Download progress: 2%
+2017/12/15 16:19:51 ui:     hyperv-iso: Download progress: 2%
+2017/12/15 16:19:56 ui:     hyperv-iso: Download progress: 2%
+2017/12/15 16:20:01 ui:     hyperv-iso: Download progress: 2%
+2017/12/15 16:20:06 ui:     hyperv-iso: Download progress: 2%
+2017/12/15 16:20:11 ui:     hyperv-iso: Download progress: 3%
+2017/12/15 16:20:16 ui:     hyperv-iso: Download progress: 3%
+2017/12/15 16:20:21 ui:     hyperv-iso: Download progress: 3%
+2017/12/15 16:20:26 ui:     hyperv-iso: Download progress: 3%
+2017/12/15 16:20:31 ui:     hyperv-iso: Download progress: 3%
+2017/12/15 16:20:36 ui:     hyperv-iso: Download progress: 4%
+2017/12/15 16:20:41 ui:     hyperv-iso: Download progress: 4%
+2017/12/15 16:20:46 ui:     hyperv-iso: Download progress: 4%
+2017/12/15 16:20:51 ui:     hyperv-iso: Download progress: 4%
+2017/12/15 16:20:56 ui:     hyperv-iso: Download progress: 4%
+2017/12/15 16:21:01 ui:     hyperv-iso: Download progress: 4%
+2017/12/15 16:21:06 ui:     hyperv-iso: Download progress: 5%
+2017/12/15 16:21:11 ui:     hyperv-iso: Download progress: 5%
+2017/12/15 16:21:16 ui:     hyperv-iso: Download progress: 5%
+2017/12/15 16:21:21 ui:     hyperv-iso: Download progress: 5%
+2017/12/15 16:21:26 ui:     hyperv-iso: Download progress: 5%
+2017/12/15 16:21:31 ui:     hyperv-iso: Download progress: 5%
+2017/12/15 16:21:36 ui:     hyperv-iso: Download progress: 6%
+2017/12/15 16:21:41 ui:     hyperv-iso: Download progress: 6%
+2017/12/15 16:21:46 ui:     hyperv-iso: Download progress: 6%
+2017/12/15 16:21:51 ui:     hyperv-iso: Download progress: 6%
+2017/12/15 16:21:56 ui:     hyperv-iso: Download progress: 6%
+2017/12/15 16:22:01 ui:     hyperv-iso: Download progress: 6%
+2017/12/15 16:22:06 ui:     hyperv-iso: Download progress: 7%
+2017/12/15 16:22:11 ui:     hyperv-iso: Download progress: 7%
+2017/12/15 16:22:16 ui:     hyperv-iso: Download progress: 7%
+2017/12/15 16:22:21 ui:     hyperv-iso: Download progress: 7%
+2017/12/15 16:22:26 ui:     hyperv-iso: Download progress: 7%
+2017/12/15 16:22:31 ui:     hyperv-iso: Download progress: 7%
+2017/12/15 16:22:36 ui:     hyperv-iso: Download progress: 8%
+2017/12/15 16:22:41 ui:     hyperv-iso: Download progress: 8%
+2017/12/15 16:22:46 ui:     hyperv-iso: Download progress: 8%
+2017/12/15 16:22:51 ui:     hyperv-iso: Download progress: 8%
+2017/12/15 16:22:56 ui:     hyperv-iso: Download progress: 8%
+2017/12/15 16:23:01 ui:     hyperv-iso: Download progress: 8%
+2017/12/15 16:23:06 ui:     hyperv-iso: Download progress: 9%
+2017/12/15 16:23:11 ui:     hyperv-iso: Download progress: 9%
+2017/12/15 16:23:16 ui:     hyperv-iso: Download progress: 9%
+2017/12/15 16:23:21 ui:     hyperv-iso: Download progress: 9%
+2017/12/15 16:23:26 ui:     hyperv-iso: Download progress: 9%
+2017/12/15 16:23:31 ui:     hyperv-iso: Download progress: 10%
+2017/12/15 16:23:36 ui:     hyperv-iso: Download progress: 10%
+2017/12/15 16:23:41 ui:     hyperv-iso: Download progress: 10%
+2017/12/15 16:23:46 ui:     hyperv-iso: Download progress: 10%
+2017/12/15 16:23:51 ui:     hyperv-iso: Download progress: 10%
+2017/12/15 16:23:56 ui:     hyperv-iso: Download progress: 10%
+2017/12/15 16:24:01 ui:     hyperv-iso: Download progress: 11%
+2017/12/15 16:24:06 ui:     hyperv-iso: Download progress: 11%
+2017/12/15 16:24:11 ui:     hyperv-iso: Download progress: 11%
+2017/12/15 16:24:16 ui:     hyperv-iso: Download progress: 11%
+2017/12/15 16:24:21 ui:     hyperv-iso: Download progress: 11%
+2017/12/15 16:24:26 ui:     hyperv-iso: Download progress: 11%
+2017/12/15 16:24:31 ui:     hyperv-iso: Download progress: 12%
+2017/12/15 16:24:36 ui:     hyperv-iso: Download progress: 12%
+2017/12/15 16:24:41 ui:     hyperv-iso: Download progress: 12%
+2017/12/15 16:24:46 ui:     hyperv-iso: Download progress: 12%
+2017/12/15 16:24:51 ui:     hyperv-iso: Download progress: 12%
+2017/12/15 16:24:56 ui:     hyperv-iso: Download progress: 12%
+2017/12/15 16:25:01 ui:     hyperv-iso: Download progress: 12%
+2017/12/15 16:25:06 ui:     hyperv-iso: Download progress: 13%
+2017/12/15 16:25:11 ui:     hyperv-iso: Download progress: 13%
+2017/12/15 16:25:16 ui:     hyperv-iso: Download progress: 13%
+2017/12/15 16:25:21 ui:     hyperv-iso: Download progress: 13%
+2017/12/15 16:25:26 ui:     hyperv-iso: Download progress: 13%
+2017/12/15 16:25:31 ui:     hyperv-iso: Download progress: 13%
+2017/12/15 16:25:36 ui:     hyperv-iso: Download progress: 14%
+2017/12/15 16:25:41 ui:     hyperv-iso: Download progress: 14%
+2017/12/15 16:25:46 ui:     hyperv-iso: Download progress: 14%
+2017/12/15 16:25:51 ui:     hyperv-iso: Download progress: 14%
+2017/12/15 16:25:56 ui:     hyperv-iso: Download progress: 14%
+2017/12/15 16:26:01 ui:     hyperv-iso: Download progress: 15%
+2017/12/15 16:26:06 ui:     hyperv-iso: Download progress: 15%
+2017/12/15 16:26:11 ui:     hyperv-iso: Download progress: 15%
+2017/12/15 16:26:16 ui:     hyperv-iso: Download progress: 15%
+2017/12/15 16:26:21 ui:     hyperv-iso: Download progress: 15%
+2017/12/15 16:26:26 ui:     hyperv-iso: Download progress: 15%
+2017/12/15 16:26:31 ui:     hyperv-iso: Download progress: 15%
+2017/12/15 16:26:36 ui:     hyperv-iso: Download progress: 16%
+2017/12/15 16:26:41 ui:     hyperv-iso: Download progress: 16%
+2017/12/15 16:26:46 ui:     hyperv-iso: Download progress: 16%
+2017/12/15 16:26:51 ui:     hyperv-iso: Download progress: 16%
+2017/12/15 16:26:56 ui:     hyperv-iso: Download progress: 16%
+2017/12/15 16:27:01 ui:     hyperv-iso: Download progress: 16%
+2017/12/15 16:27:06 ui:     hyperv-iso: Download progress: 17%
+2017/12/15 16:27:11 ui:     hyperv-iso: Download progress: 17%
+2017/12/15 16:27:16 ui:     hyperv-iso: Download progress: 17%
+2017/12/15 16:27:21 ui:     hyperv-iso: Download progress: 17%
+2017/12/15 16:27:26 ui:     hyperv-iso: Download progress: 17%
+2017/12/15 16:27:31 ui:     hyperv-iso: Download progress: 17%
+2017/12/15 16:27:36 ui:     hyperv-iso: Download progress: 18%
+2017/12/15 16:27:41 ui:     hyperv-iso: Download progress: 18%
+2017/12/15 16:27:46 ui:     hyperv-iso: Download progress: 18%
+2017/12/15 16:27:51 ui:     hyperv-iso: Download progress: 18%
+2017/12/15 16:27:56 ui:     hyperv-iso: Download progress: 18%
+2017/12/15 16:28:01 ui:     hyperv-iso: Download progress: 18%
+2017/12/15 16:28:06 ui:     hyperv-iso: Download progress: 19%
+2017/12/15 16:28:11 ui:     hyperv-iso: Download progress: 19%
+2017/12/15 16:28:16 ui:     hyperv-iso: Download progress: 19%
+2017/12/15 16:28:21 ui:     hyperv-iso: Download progress: 19%
+2017/12/15 16:28:26 ui:     hyperv-iso: Download progress: 19%
+2017/12/15 16:28:31 ui:     hyperv-iso: Download progress: 19%
+2017/12/15 16:28:36 ui:     hyperv-iso: Download progress: 20%
+2017/12/15 16:28:41 ui:     hyperv-iso: Download progress: 20%
+2017/12/15 16:28:46 ui:     hyperv-iso: Download progress: 20%
+2017/12/15 16:28:51 ui:     hyperv-iso: Download progress: 20%
+2017/12/15 16:28:56 ui:     hyperv-iso: Download progress: 20%
+2017/12/15 16:29:01 ui:     hyperv-iso: Download progress: 20%
+2017/12/15 16:29:06 ui:     hyperv-iso: Download progress: 21%
+2017/12/15 16:29:11 ui:     hyperv-iso: Download progress: 21%
+2017/12/15 16:29:16 ui:     hyperv-iso: Download progress: 21%
+2017/12/15 16:29:21 ui:     hyperv-iso: Download progress: 21%
+2017/12/15 16:29:26 ui:     hyperv-iso: Download progress: 21%
+2017/12/15 16:29:31 ui:     hyperv-iso: Download progress: 21%
+2017/12/15 16:29:36 ui:     hyperv-iso: Download progress: 21%
+2017/12/15 16:29:41 ui:     hyperv-iso: Download progress: 22%
+2017/12/15 16:29:46 ui:     hyperv-iso: Download progress: 22%
+2017/12/15 16:29:51 ui:     hyperv-iso: Download progress: 22%
+2017/12/15 16:29:56 ui:     hyperv-iso: Download progress: 22%
+2017/12/15 16:30:01 ui:     hyperv-iso: Download progress: 22%
+2017/12/15 17:06:17 packer.exe: 2017/12/15 17:06:17 Verifying checksum of G:\code\packer-baseboxes\packer_cache\2abc675555eb50fe18af30c2b5bab74d031166db318e9f000a7e9a30d722ac31.iso
+2017/12/15 17:29:03 packer.exe: 2017/12/15 17:29:03 No floppy files specified. Floppy disk will not be made.
+2017/12/15 17:29:03 packer.exe: 2017/12/15 17:29:03 Trying port: 8239
+2017/12/15 17:29:03 ui: ==> hyperv-iso: Starting HTTP server on port 8239
+2017/12/15 17:29:03 ui: ==> hyperv-iso: Creating switch 'eSw' if required...
+2017/12/15 17:29:04 ui: ==> hyperv-iso:     switch 'eSw' already exists. Will not delete on cleanup...
+2017/12/15 17:29:04 ui: ==> hyperv-iso: Creating virtual machine...
+2017/12/15 17:29:07 ui: ==> hyperv-iso: Enabling Integration Service...
+2017/12/15 17:29:09 ui: ==> hyperv-iso: Setting boot drive to os dvd drive G:\code\packer-baseboxes\packer_cache\2abc675555eb50fe18af30c2b5bab74d031166db318e9f000a7e9a30d722ac31.iso ...
+2017/12/15 17:29:10 ui: ==> hyperv-iso: Mounting os dvd drive G:\code\packer-baseboxes\packer_cache\2abc675555eb50fe18af30c2b5bab74d031166db318e9f000a7e9a30d722ac31.iso ...
+2017/12/15 17:29:11 ui: ==> hyperv-iso: Skipping mounting Integration Services Setup Disk...
+2017/12/15 17:29:11 ui: ==> hyperv-iso: Mounting secondary DVD images...
+2017/12/15 17:29:12 ui: ==> hyperv-iso: Mounting secondary dvd drive ./windows/windows-10-amd64/answer.iso ...
+2017/12/15 17:29:13 packer.exe: 2017/12/15 17:29:13 ISO ./windows/windows-10-amd64/answer.iso mounted on DVD controller 0, location 2
+2017/12/15 17:29:13 ui: ==> hyperv-iso: Configuring vlan...
+2017/12/15 17:29:13 ui: ==> hyperv-iso: Starting the virtual machine...
+2017/12/15 17:29:24 ui: ==> hyperv-iso: Host IP for the HyperV machine: 192.168.5.104
+2017/12/15 17:29:24 ui: ==> hyperv-iso: Typing the boot command...
+2017/12/15 17:29:24 packer.exe: 2017/12/15 17:29:24 Sending char 'a', code '[1e 9e]', shift false
+2017/12/15 17:29:24 packer.exe: 2017/12/15 17:29:24 Special code '<enter>' found, replacing with: [1c 9c]
+2017/12/15 17:29:24 packer.exe: 2017/12/15 17:29:24 Special code <wait> found, will sleep 1 second at this point.
+2017/12/15 17:29:24 packer.exe: 2017/12/15 17:29:24 Sending char 'a', code '[1e 9e]', shift false
+2017/12/15 17:29:24 packer.exe: 2017/12/15 17:29:24 Special code '<enter>' found, replacing with: [1c 9c]
+2017/12/15 17:29:24 packer.exe: 2017/12/15 17:29:24 Special code <wait> found, will sleep 1 second at this point.
+2017/12/15 17:29:24 packer.exe: 2017/12/15 17:29:24 Sending char 'a', code '[1e 9e]', shift false
+2017/12/15 17:29:24 packer.exe: 2017/12/15 17:29:24 Special code '<enter>' found, replacing with: [1c 9c]
+2017/12/15 17:29:24 packer.exe: 2017/12/15 17:29:24 Special code <wait> found, will sleep 1 second at this point.
+2017/12/15 17:29:24 packer.exe: 2017/12/15 17:29:24 Sending char 'a', code '[1e 9e]', shift false
+2017/12/15 17:29:24 packer.exe: 2017/12/15 17:29:24 Special code '<enter>' found, replacing with: [1c 9c]
+2017/12/15 17:29:29 ui: ==> hyperv-iso: Waiting for WinRM to become available...
+2017/12/15 17:29:29 packer.exe: 2017/12/15 17:29:29 Waiting for WinRM, up to timeout: 4h0m0s
+2017/12/15 17:29:35 packer.exe: 2017/12/15 17:29:35 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:29:42 packer.exe: 2017/12/15 17:29:42 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:29:48 packer.exe: 2017/12/15 17:29:48 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:29:55 packer.exe: 2017/12/15 17:29:55 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:30:01 packer.exe: 2017/12/15 17:30:01 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:30:08 packer.exe: 2017/12/15 17:30:08 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:30:14 packer.exe: 2017/12/15 17:30:14 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:30:20 packer.exe: 2017/12/15 17:30:20 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:30:26 packer.exe: 2017/12/15 17:30:26 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:30:33 packer.exe: 2017/12/15 17:30:33 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:30:39 packer.exe: 2017/12/15 17:30:39 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:30:45 packer.exe: 2017/12/15 17:30:45 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:30:51 packer.exe: 2017/12/15 17:30:51 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:30:58 packer.exe: 2017/12/15 17:30:58 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:31:04 packer.exe: 2017/12/15 17:31:04 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:31:10 packer.exe: 2017/12/15 17:31:10 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:31:16 packer.exe: 2017/12/15 17:31:16 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:31:23 packer.exe: 2017/12/15 17:31:23 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:31:29 packer.exe: 2017/12/15 17:31:29 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:31:35 packer.exe: 2017/12/15 17:31:35 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:31:41 packer.exe: 2017/12/15 17:31:41 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:31:48 packer.exe: 2017/12/15 17:31:48 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:31:54 packer.exe: 2017/12/15 17:31:54 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:32:00 packer.exe: 2017/12/15 17:32:00 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:32:06 packer.exe: 2017/12/15 17:32:06 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:32:13 packer.exe: 2017/12/15 17:32:13 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:32:19 packer.exe: 2017/12/15 17:32:19 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:32:25 packer.exe: 2017/12/15 17:32:25 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:32:31 packer.exe: 2017/12/15 17:32:31 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:32:38 packer.exe: 2017/12/15 17:32:38 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:32:44 packer.exe: 2017/12/15 17:32:44 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:32:50 packer.exe: 2017/12/15 17:32:50 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:32:57 packer.exe: 2017/12/15 17:32:57 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:33:03 packer.exe: 2017/12/15 17:33:03 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:33:09 packer.exe: 2017/12/15 17:33:09 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:33:15 packer.exe: 2017/12/15 17:33:15 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:33:22 packer.exe: 2017/12/15 17:33:22 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:33:28 packer.exe: 2017/12/15 17:33:28 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:33:34 packer.exe: 2017/12/15 17:33:34 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:33:40 packer.exe: 2017/12/15 17:33:40 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:33:47 packer.exe: 2017/12/15 17:33:47 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:33:53 packer.exe: 2017/12/15 17:33:53 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:34:00 packer.exe: 2017/12/15 17:34:00 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:34:06 packer.exe: 2017/12/15 17:34:06 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:34:12 packer.exe: 2017/12/15 17:34:12 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:34:18 packer.exe: 2017/12/15 17:34:18 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:34:24 packer.exe: 2017/12/15 17:34:24 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:34:30 packer.exe: 2017/12/15 17:34:30 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:34:37 packer.exe: 2017/12/15 17:34:37 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:34:43 packer.exe: 2017/12/15 17:34:43 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:34:49 packer.exe: 2017/12/15 17:34:49 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:34:55 packer.exe: 2017/12/15 17:34:55 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:35:02 packer.exe: 2017/12/15 17:35:02 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:35:08 packer.exe: 2017/12/15 17:35:08 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:35:14 packer.exe: 2017/12/15 17:35:14 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:35:20 packer.exe: 2017/12/15 17:35:20 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:35:26 packer.exe: 2017/12/15 17:35:26 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:35:32 packer.exe: 2017/12/15 17:35:32 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:35:39 packer.exe: 2017/12/15 17:35:39 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:35:45 packer.exe: 2017/12/15 17:35:45 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:35:51 packer.exe: 2017/12/15 17:35:51 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:35:57 packer.exe: 2017/12/15 17:35:57 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:36:03 packer.exe: 2017/12/15 17:36:03 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:36:10 packer.exe: 2017/12/15 17:36:10 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:36:16 packer.exe: 2017/12/15 17:36:16 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:36:22 packer.exe: 2017/12/15 17:36:22 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:36:28 packer.exe: 2017/12/15 17:36:28 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:36:35 packer.exe: 2017/12/15 17:36:35 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:36:41 packer.exe: 2017/12/15 17:36:41 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:36:47 packer.exe: 2017/12/15 17:36:47 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:36:53 packer.exe: 2017/12/15 17:36:53 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:37:00 packer.exe: 2017/12/15 17:37:00 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:37:06 packer.exe: 2017/12/15 17:37:06 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:37:12 packer.exe: 2017/12/15 17:37:12 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:37:18 packer.exe: 2017/12/15 17:37:18 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:37:24 packer.exe: 2017/12/15 17:37:24 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:37:31 packer.exe: 2017/12/15 17:37:31 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:37:37 packer.exe: 2017/12/15 17:37:37 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:37:43 packer.exe: 2017/12/15 17:37:43 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:37:49 packer.exe: 2017/12/15 17:37:49 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:37:56 packer.exe: 2017/12/15 17:37:56 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:38:02 packer.exe: 2017/12/15 17:38:02 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:38:08 packer.exe: 2017/12/15 17:38:08 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:38:14 packer.exe: 2017/12/15 17:38:14 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:38:20 packer.exe: 2017/12/15 17:38:20 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:38:27 packer.exe: 2017/12/15 17:38:27 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:38:33 packer.exe: 2017/12/15 17:38:33 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:38:39 packer.exe: 2017/12/15 17:38:39 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:38:45 packer.exe: 2017/12/15 17:38:45 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:38:51 packer.exe: 2017/12/15 17:38:51 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:38:58 packer.exe: 2017/12/15 17:38:58 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:39:04 packer.exe: 2017/12/15 17:39:04 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:39:10 packer.exe: 2017/12/15 17:39:10 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:39:16 packer.exe: 2017/12/15 17:39:16 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:39:23 packer.exe: 2017/12/15 17:39:23 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:39:29 packer.exe: 2017/12/15 17:39:29 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:39:35 packer.exe: 2017/12/15 17:39:35 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:39:41 packer.exe: 2017/12/15 17:39:41 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:39:48 packer.exe: 2017/12/15 17:39:48 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:39:54 packer.exe: 2017/12/15 17:39:54 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:40:00 packer.exe: 2017/12/15 17:40:00 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:40:06 packer.exe: 2017/12/15 17:40:06 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:40:13 packer.exe: 2017/12/15 17:40:13 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:40:19 packer.exe: 2017/12/15 17:40:19 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:40:26 packer.exe: 2017/12/15 17:40:26 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:40:32 packer.exe: 2017/12/15 17:40:32 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:40:38 packer.exe: 2017/12/15 17:40:38 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:40:44 packer.exe: 2017/12/15 17:40:44 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:40:50 packer.exe: 2017/12/15 17:40:50 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:40:56 packer.exe: 2017/12/15 17:40:56 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:41:02 packer.exe: 2017/12/15 17:41:02 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:41:09 packer.exe: 2017/12/15 17:41:09 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:41:15 packer.exe: 2017/12/15 17:41:15 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:41:21 packer.exe: 2017/12/15 17:41:21 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:41:27 packer.exe: 2017/12/15 17:41:27 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:41:33 packer.exe: 2017/12/15 17:41:33 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:41:39 packer.exe: 2017/12/15 17:41:39 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:41:45 packer.exe: 2017/12/15 17:41:45 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:41:51 packer.exe: 2017/12/15 17:41:51 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:41:57 packer.exe: 2017/12/15 17:41:57 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:42:03 packer.exe: 2017/12/15 17:42:03 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:42:09 packer.exe: 2017/12/15 17:42:09 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:42:15 packer.exe: 2017/12/15 17:42:15 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:42:21 packer.exe: 2017/12/15 17:42:21 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:42:27 packer.exe: 2017/12/15 17:42:27 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:42:33 packer.exe: 2017/12/15 17:42:33 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:42:39 packer.exe: 2017/12/15 17:42:39 [DEBUG] Error getting WinRM host: No ip address.
+2017/12/15 17:42:45 packer.exe: 2017/12/15 17:42:45 [DEBUG] Error getting WinRM host: No ip address.
