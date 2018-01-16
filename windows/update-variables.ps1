@@ -90,7 +90,7 @@ if ($ENV:UnAttendWindows2016ComputerName) {
 	$UnAttendWindows2016ComputerName = $ENV:UnAttendWindows2016ComputerName
 }
 
-$SkipWindowsUpdates = $false
+$SkipWindowsUpdates = $true
 if ($ENV:SkipWindowsUpdates) {
 	$SkipWindowsUpdates = [System.Convert]::ToBoolean($ENV:SkipWindowsUpdates)
 }
@@ -105,7 +105,7 @@ if ($ENV:SkipCompileDotNetAssemblies) {
 	$SkipCompileDotNetAssemblies = [System.Convert]::ToBoolean($ENV:SkipCompileDotNetAssemblies)
 }
 
-$SkipDefrag = $false
+$SkipDefrag = $true
 if ($ENV:SkipDefrag) {
 	$SkipDefrag = [System.Convert]::ToBoolean($ENV:SkipDefrag)
 }
